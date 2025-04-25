@@ -33,6 +33,233 @@ const organOptions = [
   "Inimă",
 ];
 
+const symptomOptions = {
+  Creier: [
+    "Durere de cap",
+    "Amețeli",
+    "Pierderea echilibrului",
+    "Tulburări de memorie",
+    "Confuzie",
+    "Vedere dublă",
+  ],
+  Ochiul: [
+    "Vedere încețoșată",
+    "Durere oculară",
+    "Sensibilitate la lumină",
+    "Lacrimație excesivă",
+    "Roșeață oculară",
+    "Pierderea vederii",
+  ],
+  Urechea: [
+    "Durere de ureche",
+    "Tiuit (tinitus)",
+    "Scăderea auzului",
+    "Senzație de presiune",
+    "Amețeli",
+    "Secreții auriculare",
+  ],
+  "Nasul și sinusurile": [
+    "Congestie nazală",
+    "Secreții nazale",
+    "Durere facială",
+    "Pierderea mirosului",
+    "Strănut",
+    "Presiune sinusală",
+  ],
+  Laringele: [
+    "Răgușeală",
+    "Durere în gât",
+    "Dificultate la vorbire",
+    "Senzație de nod în gât",
+    "Tuse seacă",
+    "Pierderea vocii",
+  ],
+  Plamanii: [
+    "Tuse",
+    "Dificultăți de respirație",
+    "Durere toracică",
+    "Expectorație",
+    "Oboseală",
+    "Respirație șuierătoare",
+  ],
+  "Canale faringiene": [
+    "Durere la înghițire",
+    "Gâdilat în gât",
+    "Inflamație",
+    "Tuse iritativă",
+    "Senzație de uscăciune",
+    "Disconfort la vorbire",
+  ],
+  "Cavitatea bucală și faringele": [
+    "Durere orală",
+    "Ulcerații",
+    "Miros neplăcut",
+    "Sângerare gingivală",
+    "Inflamație",
+    "Senzație de arsură",
+  ],
+  Tiroidă: [
+    "Gât umflat",
+    "Oboseală",
+    "Scădere/creștere în greutate",
+    "Palpitații",
+    "Anxietate",
+    "Tulburări menstruale",
+  ],
+  Esofag: [
+    "Arsuri",
+    "Reflux acid",
+    "Durere la înghițire",
+    "Regurgitare",
+    "Greutate în piept",
+    "Tuse după masă",
+  ],
+  "Stomac și duoden": [
+    "Durere epigastrică",
+    "Greață",
+    "Balonare",
+    "Arsuri gastrice",
+    "Vărsături",
+    "Senzație de plin",
+  ],
+  "Ficat și vezica biliară": [
+    "Durere sub coaste",
+    "Greață după masă",
+    "Icter",
+    "Balonare",
+    "Oboseală",
+    "Urina închisă",
+  ],
+  Pancreas: [
+    "Durere abdominală",
+    "Greață",
+    "Vărsături",
+    "Scaune grase",
+    "Oboseală",
+    "Pierdere în greutate",
+  ],
+  "Intestine și rect": [
+    "Dureri abdominale",
+    "Balonare",
+    "Diaree",
+    "Constipație",
+    "Sângerări anale",
+    "Gaze excesive",
+  ],
+  "Rinichi și vezică urinară": [
+    "Durere lombară",
+    "Urinări frecvente",
+    "Urină tulbure",
+    "Febră",
+    "Arsuri urinare",
+    "Umflături",
+  ],
+  "Organe sexuale masculine": [
+    "Durere testiculară",
+    "Disfuncție erectilă",
+    "Senzație de presiune",
+    "Secreții neobișnuite",
+    "Dureri la urinare",
+    "Scăderea libidoului",
+  ],
+  "Organe sexuale feminine": [
+    "Dureri pelvine",
+    "Menstruații neregulate",
+    "Secreții vaginale",
+    "Sângerări anormale",
+    "Durere la contact sexual",
+    "Senzație de arsură",
+  ],
+  "Sân feminine": [
+    "Durere mamară",
+    "Noduli",
+    "Umflare",
+    "Secreții",
+    "Roșeață",
+    "Senzație de greutate",
+  ],
+  Piele: [
+    "Erupții cutanate",
+    "Mâncărimi",
+    "Roșeață",
+    "Uscăciune",
+    "Pustule",
+    "Descuamare",
+  ],
+  "Muschi scheletici": [
+    "Durere musculară",
+    "Slăbiciune",
+    "Rigiditate",
+    "Crampe",
+    "Spasme",
+    "Oboseală musculară",
+  ],
+  "Tesut conjunctiv": [
+    "Durere articulară",
+    "Inflamație",
+    "Sensibilitate",
+    "Mobilitate redusă",
+    "Umflare",
+    "Rigiditate matinală",
+  ],
+  "Tesut adipos": [
+    "Umflături locale",
+    "Noduli",
+    "Durere la apăsare",
+    "Inflamație",
+    "Modificări ale conturului",
+    "Sensibilitate la atingere",
+  ],
+  "Oase si articulatii": [
+    "Durere osoasă",
+    "Rigiditate",
+    "Cracmente",
+    "Inflamație",
+    "Limitare de mișcare",
+    "Deformări",
+  ],
+  Periost: [
+    "Durere localizată",
+    "Sensibilitate la atingere",
+    "Umflare",
+    "Roșeață",
+    "Inflamație profundă",
+    "Limitare funcțională",
+  ],
+  "Dinti si maxilar": [
+    "Durere dentară",
+    "Sensibilitate",
+    "Gingii inflamate",
+    "Sângerări gingivale",
+    "Dureri de maxilar",
+    "Halitoză",
+  ],
+  "Sistem limfatic": [
+    "Umflarea ganglionilor",
+    "Sensibilitate ganglionară",
+    "Oboseală",
+    "Febră",
+    "Transpirații nocturne",
+    "Scădere în greutate",
+  ],
+  "Vase de sânge": [
+    "Picioare umflate",
+    "Crampe",
+    "Senzație de greutate",
+    "Varice",
+    "Cianoza degetelor",
+    "Durere la mers",
+  ],
+  Inimă: [
+    "Durere în piept",
+    "Palpitații",
+    "Oboseală",
+    "Amețeli",
+    "Sufocare",
+    "Anxietate",
+  ],
+};
+
 const diagnosticOptions = {
   Creier: [
     "Glanda pituitară (sau hipofiza)",
@@ -1674,6 +1901,7 @@ function App() {
             onChange={(e) => {
               setOrgan(e.target.value);
               setDiagnostic("");
+              setSimptome([]); // Resetăm simptomele
             }}
           >
             <option value="">-- Selectează organul --</option>
@@ -1715,21 +1943,24 @@ function App() {
             </>
           )}
 
-          <label>Simptome:</label>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
-            {["Durere", "Umflare", "Greață", "Oboseală", "Febră"].map(
-              (symptom) => (
-                <label key={symptom}>
-                  <input
-                    type="checkbox"
-                    value={symptom}
-                    onChange={(e) => handleSymptomChange(symptom)}
-                  />{" "}
-                  {symptom}
-                </label>
-              )
-            )}
-          </div>
+          {organ && symptomOptions[organ] && (
+            <>
+              <label>Simptome:</label>
+              <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+                {symptomOptions[organ].map((symptom) => (
+                  <label key={symptom}>
+                    <input
+                      type="checkbox"
+                      value={symptom}
+                      checked={simptome.includes(symptom)}
+                      onChange={() => handleSymptomChange(symptom)}
+                    />{" "}
+                    {symptom}
+                  </label>
+                ))}
+              </div>
+            </>
+          )}
 
           <label>De cât timp te doare?</label>
           <select value={durata} onChange={(e) => setDurata(e.target.value)}>
