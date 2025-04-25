@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.butonCuloare {
+  background-color: #a0c878;
+}
+
+.form-container {
+  width: 45%;
+}
+.result-container {
+  width: 45%;
+  border-left: 2px solid #ccc;
+  padding-left: 20px;
+}
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+select,
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+.result {
+  margin-top: 10px;
+}
+.treatment {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
+#error-msg {
+  color: red;
+}
