@@ -1878,7 +1878,7 @@ function App() {
     setTreatment(
       `<strong>Conflictul:</strong><br />${tratament}<br /><br /><strong>Exemple:</strong><br />${exemple}`
     );
-    setexemple(exemplu);
+    setExampleText(exemplu);
   };
 
   const handleSymptomChange = (value) => {
@@ -1889,10 +1889,10 @@ function App() {
 
   return (
     <div
-      className="App"
+      className="App app-container"
       style={{ display: "flex", justifyContent: "space-between", padding: 20 }}
     >
-      <div style={{ width: "45%" }}>
+      <div className="form-section" style={{ width: "45%" }}>
         <h2>Formular Medical</h2>
         <form onSubmit={handleSubmit}>
           <label>Organul afectat:</label>
@@ -1946,7 +1946,10 @@ function App() {
           {organ && symptomOptions[organ] && (
             <>
               <label>Simptome:</label>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}>
+              <div
+                className="symptoms-container"
+                style={{ display: "flex", flexWrap: "wrap", gap: "15px" }}
+              >
                 {symptomOptions[organ].map((symptom) => (
                   <label key={symptom}>
                     <input
@@ -1981,14 +1984,17 @@ function App() {
       </div>
 
       <div
+        className="result-section"
         style={{ width: "45%", borderLeft: "2px solid #ccc", paddingLeft: 20 }}
       >
         <h2 style={{ textAlign: "start" }}>Rezultate</h2>
         <div
+          className="rezultat"
           style={{ textAlign: "start" }}
           dangerouslySetInnerHTML={{ __html: result }}
         />
         <div
+          className="tratament"
           style={{
             marginTop: 15,
             fontWeight: "bold",
