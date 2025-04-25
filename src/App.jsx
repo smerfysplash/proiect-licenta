@@ -135,7 +135,7 @@ const diagnosticOptions = {
     "Glandă prostatică",
     "Canale prostatice",
     "Canale ejaculatoare",
-    "Celule germinale",
+    "Celule germinale (masculine)",
     "Testicule",
     "Tunica vaginală a testiculului (învelișul testiculului)",
     "Glande secretante de smegmă (glandele Tyson)",
@@ -145,7 +145,7 @@ const diagnosticOptions = {
   "Organe sexuale feminine": [
     "Uter / Trompe uterine (Fallopian tubes)",
     "Mușchii uterului",
-    "Celule germinale",
+    "Celule germinale (feminine)",
     "Ovare",
     "Col uterin",
     "Mușchii colului uterin / Sfincterul cervical",
@@ -1166,7 +1166,7 @@ const treatmentInfo = {
       "„Nu pot controla ejacularea, nu sunt suficient de bărbat.” - Un tânăr suferă de ejaculare precoce și se simte rușinat și stresat înaintea fiecărui act sexual.",
     ],
   },
-  "Celule germinale": {
+  "Celule germinale (masculine)": {
     conflict: [
       "Conflict de pierdere profundă - Simți că ai pierdut ceva fundamental pentru viitorul tău – copil, identitate, sens.",
     ],
@@ -1246,7 +1246,7 @@ const treatmentInfo = {
       "Frică intensă în sarcină că fătul nu e bine.",
     ],
   },
-  "Celule germinale": {
+  "Celule germinale (feminine)": {
     conflict: [
       "Pierdere profundă - O pierdere devastatoare resimțită la nivel profund, legată de „viitor” sau de maternitate.",
     ],
